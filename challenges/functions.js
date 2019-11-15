@@ -41,6 +41,8 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 // Explanation: 
 
 
+// **Answer: because of function block scope.  nested functions can look outward for variables if they don't find them in their own scope but the reverse is not true and functions are not able to reach into the scope of nested functions to access a variable there.
+
 const external = "I'm outside the function";
 
 function myFunction() {
